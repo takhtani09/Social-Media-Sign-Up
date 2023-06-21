@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AppAuth",
+        "repositoryURL": "https://github.com/openid/AppAuth-iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "71cde449f13d453227e687458144bde372d30fc7",
+          "version": "1.6.2"
+        }
+      },
+      {
+        "package": "Facebook",
+        "repositoryURL": "https://github.com/facebook/facebook-ios-sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "c3d367656ae8ced1149c2c6a5e6b5dd91ecad63c",
+          "version": "9.3.0"
+        }
+      },
+      {
+        "package": "GoogleSignIn",
+        "repositoryURL": "https://github.com/google/GoogleSignIn-iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "7932d33686c1dc4d7df7a919aae47361d1cdfda4",
+          "version": "7.0.0"
+        }
+      },
+      {
+        "package": "GTMSessionFetcher",
+        "repositoryURL": "https://github.com/google/gtm-session-fetcher.git",
+        "state": {
+          "branch": null,
+          "revision": "d415594121c9e8a4f9d79cecee0965cf35e74dbd",
+          "version": "3.1.1"
+        }
+      },
+      {
+        "package": "GTMAppAuth",
+        "repositoryURL": "https://github.com/google/GTMAppAuth.git",
+        "state": {
+          "branch": null,
+          "revision": "cee3c709307912d040bd1e06ca919875a92339c6",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "IQKeyboardManagerSwift",
+        "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager.git",
+        "state": {
+          "branch": null,
+          "revision": "ea08e08958890043019d248065fe3d825f338087",
+          "version": "6.5.12"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

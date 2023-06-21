@@ -2,6 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>fbAPP-ID</string>
+      </array>
+      </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>971435174159261</string>
+    <key>FacebookClientToken</key>
+    <string>9dfa1c0c92a8fc007c8d427308bcf163</string>
+    <key>FacebookDisplayName</key>
+    <string>Social Sign Up</string>
+    
+    <key>GIDClientID</key>
+    <string>1017714174199-g678psab576v9eprlpmpveq0gk1mgf21.apps.googleusercontent.com</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>
+              com.googleusercontent.apps.1017714174199-g678psab576v9eprlpmpveq0gk1mgf21</string>
+        </array>
+      </dict>
+    </array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -22,10 +50,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>Google Sign In</string>
+			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.725113560215-jjhg9o5h6u98orphpc2ktuukhmk2gfep</string>
+				<string>com.googleusercontent.apps.1017714174199-g678psab576v9eprlpmpveq0gk1mgf21</string>
 			</array>
 		</dict>
 	</array>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		EC1DB8F72A404B5B001F89B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1DB8F62A404B5B001F89B8 /* Assets.xcassets */; };
 		EC1DB8FA2A404B5B001F89B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1DB8F82A404B5B001F89B8 /* LaunchScreen.storyboard */; };
 		EC1DB9072A406911001F89B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC1DB9062A406911001F89B8 /* GoogleService-Info.plist */; };
+		EC9362ED2A43117D005A6A6D /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC9362EC2A43117D005A6A6D /* IQKeyboardManagerSwift */; };
+		ECF4D8862A4323A700627E74 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = ECF4D8852A4323A700627E74 /* GoogleSignIn */; };
+		ECF4D88E2A4324EB00627E74 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = ECF4D88D2A4324EB00627E74 /* FacebookShare */; };
+		ECF4D8902A4324EB00627E74 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = ECF4D88F2A4324EB00627E74 /* FacebookCore */; };
+		ECF4D8922A4324EB00627E74 /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = ECF4D8912A4324EB00627E74 /* FacebookGamingServices */; };
+		ECF4D8942A4324EB00627E74 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = ECF4D8932A4324EB00627E74 /* FacebookLogin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,7 @@
 		EC1DB8F92A404B5B001F89B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC1DB8FB2A404B5B001F89B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC1DB9062A406911001F89B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC9362D82A42BE7E005A6A6D /* Social Media Sign In.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Social Media Sign In.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9362ED2A43117D005A6A6D /* IQKeyboardManagerSwift in Frameworks */,
+				ECF4D8862A4323A700627E74 /* GoogleSignIn in Frameworks */,
+				ECF4D8942A4324EB00627E74 /* FacebookLogin in Frameworks */,
+				ECF4D88E2A4324EB00627E74 /* FacebookShare in Frameworks */,
+				ECF4D8922A4324EB00627E74 /* FacebookGamingServices in Frameworks */,
+				ECF4D8902A4324EB00627E74 /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +71,7 @@
 		EC1DB8EC2A404B59001F89B8 /* Social Media Sign In */ = {
 			isa = PBXGroup;
 			children = (
+				EC9362D82A42BE7E005A6A6D /* Social Media Sign In.entitlements */,
 				EC1DB8ED2A404B59001F89B8 /* AppDelegate.swift */,
 				EC1DB8EF2A404B59001F89B8 /* SceneDelegate.swift */,
 				EC1DB8F12A404B59001F89B8 /* ViewController.swift */,
@@ -87,6 +101,12 @@
 			);
 			name = "Social Media Sign In";
 			packageProductDependencies = (
+				EC9362EC2A43117D005A6A6D /* IQKeyboardManagerSwift */,
+				ECF4D8852A4323A700627E74 /* GoogleSignIn */,
+				ECF4D88D2A4324EB00627E74 /* FacebookShare */,
+				ECF4D88F2A4324EB00627E74 /* FacebookCore */,
+				ECF4D8912A4324EB00627E74 /* FacebookGamingServices */,
+				ECF4D8932A4324EB00627E74 /* FacebookLogin */,
 			);
 			productName = "Social Media Sign In";
 			productReference = EC1DB8EA2A404B59001F89B8 /* Social Media Sign In.app */;
@@ -116,6 +136,9 @@
 			);
 			mainGroup = EC1DB8E12A404B59001F89B8;
 			packageReferences = (
+				EC9362EB2A43117D005A6A6D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				ECF4D8842A4323A700627E74 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				ECF4D88C2A4324EB00627E74 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = EC1DB8EB2A404B59001F89B8 /* Products */;
 			projectDirPath = "";
@@ -231,6 +254,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -285,6 +309,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -294,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Social Media Sign In/Social Media Sign In.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M36758779V;
 				INFOPLIST_FILE = "Social Media Sign In/Info.plist";
@@ -313,6 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Social Media Sign In/Social Media Sign In.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M36758779V;
 				INFOPLIST_FILE = "Social Media Sign In/Info.plist";
@@ -349,6 +376,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC9362EB2A43117D005A6A6D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.12;
+			};
+		};
+		ECF4D8842A4323A700627E74 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		ECF4D88C2A4324EB00627E74 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC9362EC2A43117D005A6A6D /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9362EB2A43117D005A6A6D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		ECF4D8852A4323A700627E74 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF4D8842A4323A700627E74 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		ECF4D88D2A4324EB00627E74 /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF4D88C2A4324EB00627E74 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		ECF4D88F2A4324EB00627E74 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF4D88C2A4324EB00627E74 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		ECF4D8912A4324EB00627E74 /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF4D88C2A4324EB00627E74 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
+		};
+		ECF4D8932A4324EB00627E74 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF4D88C2A4324EB00627E74 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC1DB8E22A404B59001F89B8 /* Project object */;
 }
