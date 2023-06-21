@@ -56,6 +56,9 @@
                             <constraint firstItem="wMN-yE-Z2V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="ZC2-JG-w1a"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fbBtn" destination="usR-fX-KXa" id="KAy-nR-sAR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

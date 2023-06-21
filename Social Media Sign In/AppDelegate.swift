@@ -7,6 +7,7 @@
 
 import UIKit
 import GoogleSignIn
+import FBSDKCoreKit
 
 
 @main
@@ -23,9 +24,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 // Show the app's signed-in state.
             }
         }
+        
+        ApplicationDelegate.shared.application(
+            application,
+            didFinishLaunchingWithOptions:
+            launchOptions
+        )
         return true
     }
+    //Facebook
+    func application2(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return ApplicationDelegate.shared.application(
+            app,
+            open: url,
+            options: options
+        )
+    }
 
+    //Google
     func application(
         _ app: UIApplication,
         open url: URL,
@@ -35,14 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         handled = GIDSignIn.sharedInstance.handle(url)
         
-//        if !handled {
-//            handled = ApplicationDelegate.shared.application(
-//                app,
-//                open: url,
-//                sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
-//                annotation: options[UIApplication.OpenURLOptionsKey.annotation]
-//            )
-//        }
         
         return handled
     }

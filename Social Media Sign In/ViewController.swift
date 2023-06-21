@@ -12,14 +12,20 @@
 import AuthenticationServices
 import UIKit
 import GoogleSignIn
+import FBSDKLoginKit
 
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var fbBtn: UIButton!
     
     let appleSignInBtn = ASAuthorizationAppleIDButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateButton(isLoggedIn: (AccessToken.current != nil))
+        updateMessage(with: Profile.current?.name)
         
         view.addSubview(appleSignInBtn)
         appleSignInBtn.addTarget(self, action: #selector(appleSignIn), for: .touchUpInside)
@@ -118,6 +124,50 @@ class ViewController: UIViewController {
     
     @IBAction func facebookBtn(_ sender: UIButton) {
         
+        // 1
+        let loginManager = LoginManager()
+        
+        if let _ = AccessToken.current {
+            // Access token available -- user already logged in
+            // Perform log out
+            
+            // 2
+            loginManager.logOut()
+            updateButton(isLoggedIn: false)
+            updateMessage(with: nil)
+            
+        } else {
+            // Access token not available -- user already logged out
+            // Perform log in
+            
+            // 3
+            loginManager.logIn(permissions: [], from: self) { [weak self] (result, error) in
+                
+                // 4
+                // Check for error
+                guard error == nil else {
+                    // Error occurred
+                    print(error!.localizedDescription)
+                    return
+                }
+                
+                // 5
+                // Check for cancel
+                guard let result = result, !result.isCancelled else {
+                    print("User cancelled login")
+                    return
+                }
+              
+                // Successfully logged in
+                // 6
+                self?.updateButton(isLoggedIn: true)
+                
+                // 7
+                Profile.loadCurrentProfile { (profile, error) in
+                    self?.updateMessage(with: Profile.current?.name)
+                }
+            }
+        }
         
     }
 }
@@ -144,11 +194,35 @@ extension ViewController: ASAuthorizationControllerDelegate {
         
     }
 }
-
+//Google
 extension ViewController: ASAuthorizationControllerPresentationContextProviding{
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return view.window!
     }
-    
-    
 }
+
+//Facebook
+extension ViewController {
+    
+    private func updateButton(isLoggedIn: Bool) {
+        // 1
+        let title = isLoggedIn ? "Log out 👋🏻" : "Log in 👍🏻"
+        print(title)
+    }
+    
+    private func updateMessage(with name: String?) {
+        // 2
+        guard let name = name else {
+            // User already logged out
+            print("Please log in with Facebook.")
+            return
+        }
+        
+        // User already logged in
+        print("Hello, \(name)!")
+    }
+}
+
+
+//Before you can go live, an app admin must complete business verification. Once your business account has been verified, you can come back to this page and go live. Learn more about business verification.
+
