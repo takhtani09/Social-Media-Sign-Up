@@ -15,6 +15,8 @@
 		EC1DB8FA2A404B5B001F89B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1DB8F82A404B5B001F89B8 /* LaunchScreen.storyboard */; };
 		EC1DB9072A406911001F89B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC1DB9062A406911001F89B8 /* GoogleService-Info.plist */; };
 		EC9362ED2A43117D005A6A6D /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC9362EC2A43117D005A6A6D /* IQKeyboardManagerSwift */; };
+		ECE554532A4418F20003CAFC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE554522A4418F20003CAFC /* HomeVC.swift */; };
+		ECE554582A445A8F0003CAFC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ECE554572A445A8F0003CAFC /* Kingfisher */; };
 		ECF4D8862A4323A700627E74 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = ECF4D8852A4323A700627E74 /* GoogleSignIn */; };
 		ECF4D88E2A4324EB00627E74 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = ECF4D88D2A4324EB00627E74 /* FacebookShare */; };
 		ECF4D8902A4324EB00627E74 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = ECF4D88F2A4324EB00627E74 /* FacebookCore */; };
@@ -33,6 +35,7 @@
 		EC1DB8FB2A404B5B001F89B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC1DB9062A406911001F89B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC9362D82A42BE7E005A6A6D /* Social Media Sign In.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Social Media Sign In.entitlements"; sourceTree = "<group>"; };
+		ECE554522A4418F20003CAFC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			files = (
 				EC9362ED2A43117D005A6A6D /* IQKeyboardManagerSwift in Frameworks */,
 				ECF4D8862A4323A700627E74 /* GoogleSignIn in Frameworks */,
+				ECE554582A445A8F0003CAFC /* Kingfisher in Frameworks */,
 				ECF4D8942A4324EB00627E74 /* FacebookLogin in Frameworks */,
 				ECF4D88E2A4324EB00627E74 /* FacebookShare in Frameworks */,
 				ECF4D8922A4324EB00627E74 /* FacebookGamingServices in Frameworks */,
@@ -80,6 +84,7 @@
 				EC1DB9062A406911001F89B8 /* GoogleService-Info.plist */,
 				EC1DB8F82A404B5B001F89B8 /* LaunchScreen.storyboard */,
 				EC1DB8FB2A404B5B001F89B8 /* Info.plist */,
+				ECE554522A4418F20003CAFC /* HomeVC.swift */,
 			);
 			path = "Social Media Sign In";
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				ECF4D88F2A4324EB00627E74 /* FacebookCore */,
 				ECF4D8912A4324EB00627E74 /* FacebookGamingServices */,
 				ECF4D8932A4324EB00627E74 /* FacebookLogin */,
+				ECE554572A445A8F0003CAFC /* Kingfisher */,
 			);
 			productName = "Social Media Sign In";
 			productReference = EC1DB8EA2A404B59001F89B8 /* Social Media Sign In.app */;
@@ -139,6 +145,7 @@
 				EC9362EB2A43117D005A6A6D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				ECF4D8842A4323A700627E74 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				ECF4D88C2A4324EB00627E74 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				ECE554562A445A8F0003CAFC /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = EC1DB8EB2A404B59001F89B8 /* Products */;
 			projectDirPath = "";
@@ -169,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1DB8F22A404B59001F89B8 /* ViewController.swift in Sources */,
+				ECE554532A4418F20003CAFC /* HomeVC.swift in Sources */,
 				EC1DB8EE2A404B59001F89B8 /* AppDelegate.swift in Sources */,
 				EC1DB8F02A404B59001F89B8 /* SceneDelegate.swift in Sources */,
 			);
@@ -386,6 +394,14 @@
 				minimumVersion = 6.5.12;
 			};
 		};
+		ECE554562A445A8F0003CAFC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.1;
+			};
+		};
 		ECF4D8842A4323A700627E74 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
@@ -409,6 +425,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC9362EB2A43117D005A6A6D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		ECE554572A445A8F0003CAFC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECE554562A445A8F0003CAFC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		ECF4D8852A4323A700627E74 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;

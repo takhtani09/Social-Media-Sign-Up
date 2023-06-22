@@ -2,19 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    
-    <key>GIDClientID</key>
-    <string>1017714174199-g678psab576v9eprlpmpveq0gk1mgf21.apps.googleusercontent.com</string>
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-        <key>CFBundleURLSchemes</key>
-        <array>
-          <string>
-              com.googleusercontent.apps.1017714174199-g678psab576v9eprlpmpveq0gk1mgf21</string>
-        </array>
-      </dict>
-    </array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -32,10 +19,14 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb971435174159261</string>
+			</array>
+		</dict>
+		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.googleusercontent.apps.1017714174199-g678psab576v9eprlpmpveq0gk1mgf21</string>
@@ -44,6 +35,14 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>971435174159261</string>
+	<key>FacebookClientToken</key>
+	<string>9dfa1c0c92a8fc007c8d427308bcf163</string>
+	<key>FacebookDisplayName</key>
+	<string>Social SignUp</string>
+	<key>GIDClientID</key>
+	<string>1017714174199-g678psab576v9eprlpmpveq0gk1mgf21.apps.googleusercontent.com</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
@@ -78,8 +77,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -88,23 +85,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>fb971435174159261</string>
-      </array>
-      </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>971435174159261</string>
-    <key>FacebookClientToken</key>
-    <string>9dfa1c0c92a8fc007c8d427308bcf163</string>
-    <key>FacebookDisplayName</key>
-    <string>Social SignUp</string>
-    
-    
 </dict>
 </plist>

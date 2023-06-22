@@ -64,32 +64,73 @@
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="hSd-UY-yZf">
             <objects>
-                <viewController id="ESd-71-vJu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ESd-71-vJu" customClass="HomeVC" customModule="Social_Media_Sign_In" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xoU-ez-Sd6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successful" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fK-My-Vxz">
-                                <rect key="frame" x="90.5" y="418" width="233.5" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d6M-aM-1Im">
+                                <rect key="frame" x="80" y="244" width="254" height="243"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LW-pg-dsR">
+                                <rect key="frame" x="50" y="682" width="314" height="80"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="iui-GT-Vjw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="ESd-71-vJu" eventType="touchUpInside" id="h00-cA-1eO"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ZsL-Xi-PZt">
+                                <rect key="frame" x="80" y="537" width="284" height="95"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gct-5O-5MX">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUG-FV-rF6">
+                                        <rect key="frame" x="0.0" y="59" width="284" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ETE-tn-Sju"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1fK-My-Vxz" firstAttribute="centerX" secondItem="xoU-ez-Sd6" secondAttribute="centerX" id="7wf-hq-Hi0"/>
-                            <constraint firstItem="1fK-My-Vxz" firstAttribute="centerY" secondItem="xoU-ez-Sd6" secondAttribute="centerY" id="BrT-OR-lLE"/>
+                            <constraint firstItem="ETE-tn-Sju" firstAttribute="trailing" secondItem="d6M-aM-1Im" secondAttribute="trailing" constant="80" id="3kU-bs-YtK"/>
+                            <constraint firstItem="9LW-pg-dsR" firstAttribute="top" secondItem="ZsL-Xi-PZt" secondAttribute="bottom" constant="50" id="4zN-n2-mc2"/>
+                            <constraint firstItem="d6M-aM-1Im" firstAttribute="top" secondItem="ETE-tn-Sju" secondAttribute="top" constant="200" id="8K1-3O-u0E"/>
+                            <constraint firstItem="ZsL-Xi-PZt" firstAttribute="leading" secondItem="ETE-tn-Sju" secondAttribute="leading" constant="80" id="9X7-hi-epF"/>
+                            <constraint firstItem="ETE-tn-Sju" firstAttribute="bottom" secondItem="9LW-pg-dsR" secondAttribute="bottom" constant="100" id="Hz9-La-WmH"/>
+                            <constraint firstItem="d6M-aM-1Im" firstAttribute="leading" secondItem="ETE-tn-Sju" secondAttribute="leading" constant="80" id="XUc-kn-4Wc"/>
+                            <constraint firstItem="9LW-pg-dsR" firstAttribute="leading" secondItem="ETE-tn-Sju" secondAttribute="leading" constant="50" id="ZyO-G1-2MB"/>
+                            <constraint firstItem="ETE-tn-Sju" firstAttribute="trailing" secondItem="9LW-pg-dsR" secondAttribute="trailing" constant="50" id="in9-xU-aIw"/>
+                            <constraint firstItem="ETE-tn-Sju" firstAttribute="trailing" secondItem="ZsL-Xi-PZt" secondAttribute="trailing" constant="50" id="sR2-GX-JlN"/>
+                            <constraint firstItem="ZsL-Xi-PZt" firstAttribute="top" secondItem="d6M-aM-1Im" secondAttribute="bottom" constant="50" id="uOJ-Et-BnT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="img" destination="d6M-aM-1Im" id="gMx-sg-kNh"/>
+                        <outlet property="userEmail" destination="cUG-FV-rF6" id="Tk0-2r-EVV"/>
+                        <outlet property="username" destination="gct-5O-5MX" id="Gkh-4o-zsB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUo-0s-uPY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713" y="70"/>
+            <point key="canvasLocation" x="711.59420289855075" y="69.642857142857139"/>
         </scene>
     </scenes>
     <resources>
